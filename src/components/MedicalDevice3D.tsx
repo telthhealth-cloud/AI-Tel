@@ -13,7 +13,7 @@ const MedicalDeviceModel = ({ selectedColor, category }: MedicalDevice3DProps) =
   const modelRef = useRef<THREE.Group>(null);
   
   // Load your GLTF model - replace '/models/your-model.glb' with your actual model path
-  const { scene } = useGLTF('../../public/models/futuristic+stasis+pod+3d+model.glb');
+  const { scene } = useGLTF('../assets/blendermodel.glb');
   
   // Simple rotation animation
   useFrame((state) => {
